@@ -28,7 +28,7 @@ NYCU_VRDL_Homework2
 To install requirements: ```pip install -r requirements.txt```
 My Python version==3.8.12
 ## Data preprocessing
-Download SVHN dataset and puy in ```./train``` and ```./test```
+Download SVHN dataset and put them in ```./train``` and ```./test```
 
 Because the ground truth info is the ```.mat``` file, we need to do preprocessing, align the yolo format.
 
@@ -53,7 +53,7 @@ you can alter info of yolov5_train.sh
 ## Evaluation
 [Download my yolov5 model](https://drive.google.com/file/d/1G2jE57AjQs4ChBBVvnlMX4bPitxJw74z/view?usp=sharing)
 
-put in ```./yolo_v5/runs```
+put it in ```./yolo_v5/runs```
 
 In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
 
