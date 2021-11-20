@@ -46,6 +46,8 @@ you can alter info of yolov5_train.sh
 
 ## Evaluation
 
+In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
+
 ```sh yolov5_test.sh``` quickly train and produce json file
 
 you can alter info of yolov5_test.sh
@@ -54,7 +56,7 @@ you can alter info of yolov5_test.sh
 
 2.```--weights``` your model file
 
-In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
+
 
 Finally find the json file  in ```./yolo_v5/runs/exp/```
 ## Pre-trained model
