@@ -11,7 +11,7 @@ NYCU_VRDL_Homework2
 
 ....|-```train.py``` It is main program of training
 
-....|-```val.py``` It is main program of testing
+....|-```val.py``` (inference.py) It is main program of testing
 
 | -```requirements.txt``` need to install these librarys
 
