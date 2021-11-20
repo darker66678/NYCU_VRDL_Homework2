@@ -31,6 +31,7 @@ Because the ground truth info is the ```.mat``` file, we need to do preprocessin
 The program will randomly split 0.01 of training data as validation data
 ## Training
 ```sh yolov5_train.sh``` quickly train
+
 you can alter info of yolov5_train.sh
 
 1.```--img```  img resolution 
@@ -45,6 +46,7 @@ you can alter info of yolov5_train.sh
 
 ## Evaluation
 First, you need to alter ```./data/svhn.yaml ```
+
 ```sh yolov5_test.sh``` quickly train and produce json file
 
 you can alter info of yolov5_test.sh
@@ -57,9 +59,13 @@ In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
 
 Finally find the json file  in ```./yolo_v5/runs/exp/```
 ## Pre-trained model
-I choose pre-trained model of [yolov5](https://github.com/ultralytics/yolov5), it will download in your training
+I choose pre-trained model of [yolov5](https://github.com/ultralytics/yolov5),
+it will download in your training
+
 just indicated ```--weights xxx.pt```
+
 [Click here see all the pre-trained model](https://github.com/ultralytics/yolov5#pretrained-checkpoints)
+
 [Download my yolov5 model](https://drive.google.com/file/d/1G2jE57AjQs4ChBBVvnlMX4bPitxJw74z/view?usp=sharing)
 
 ## Results
