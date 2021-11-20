@@ -78,5 +78,5 @@ my model's map:
 ## Colab deploy
 [Colab](https://colab.research.google.com/drive/1uMu3PLxIXXeicIaqqKhetJcgyiZmB1N2?usp=sharing)
 
-![Colab time](/home/tylin/Desktop/colab_time.png)
+![Colab time](https://github.com/darker66678/NYCU_VRDL_Homework2/blob/main/colab_time.png)
 
