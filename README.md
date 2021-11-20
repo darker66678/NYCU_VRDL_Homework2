@@ -25,23 +25,34 @@ To install requirements: ```pip install -r requirements.txt```
 My Python version==3.8.12
 ## Data preprocessing
 Because the ground truth info is the ```.mat``` file, we need to do preprocessing, align the yolo format.
+
 ```python yolo_format.py --train_folder [train folder] --test_folder [test folder] ```
+
 The program will randomly split 0.01 of training data as validation data
 ## Training
 ```sh yolov5_train.sh``` quickly train
 you can alter info of yolov5_train.sh
+
 1.```--img```  img resolution 
+
 2.```--batch``` batch size
+
 3.```--epochs``` training epochs
+
 4.```--data```  yaml path
+
 5.```--weights``` version of yolov5
+
 ## Evaluation
 First, you need to alter ```./data/svhn.yaml ```
 ```sh yolov5_test.sh``` quickly train and produce json file
 
 you can alter info of yolov5_test.sh
+
 1.```--data```  yaml path
+
 2.```--weights``` your model file
+
 In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
 
 Finally find the json file  in ```./yolo_v5/runs/exp/```
