@@ -69,10 +69,10 @@ just indicated ```--weights xxx.pt```
 
 ## Results
 my model's map:
-|model name|Map|
-|---|--|
-|Yolov5_m6 (512*512)|0.428469|
-|Yolov5_l (256*256)|0.372573|
+|model name|Map|Inference time per image|
+|---|--|-----|
+|Yolov5_m6 (512*512)|0.428469|0.0651833|
+|Yolov5_l (256*256)|0.372573|--|
 
 ## Colab deploy
 [Colab](https://colab.research.google.com/drive/1uMu3PLxIXXeicIaqqKhetJcgyiZmB1N2?usp=sharing)
