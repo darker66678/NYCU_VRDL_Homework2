@@ -26,7 +26,7 @@ My Python version==3.8.12
 ## Data preprocessing
 Because the ground truth info is the ```.mat``` file, we need to do preprocessing, align the yolo format.
 
-```python yolo_format.py --train_folder [train folder] --test_folder [test folder] ```
+```python yolo_format.py --train_folder ./train/ --test_folder ./test/ ```
 
 The program will randomly split 0.01 of training data as validation data
 ## Training
