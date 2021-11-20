@@ -45,7 +45,6 @@ you can alter info of yolov5_train.sh
 5.```--weights``` version of yolov5
 
 ## Evaluation
-First, you need to alter ```./data/svhn.yaml ```
 
 ```sh yolov5_test.sh``` quickly train and produce json file
 
