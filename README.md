@@ -67,7 +67,7 @@ you can alter info of yolov5_test.sh
 
 
 
-Finally find the json file  in ```./yolo_v5/runs/exp/```
+Finally find the ```yolov5m6_512_predictions.json``` file  in ```./yolo_v5/runs/exp/```
 ## Pre-trained model
 I choose pre-trained model of [yolov5](https://github.com/ultralytics/yolov5),
 it will download in your training
