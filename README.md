@@ -20,10 +20,15 @@ NYCU_VRDL_Homework2
 | -```yolov5_train.sh``` this is shell script for training
 
 | -```yolov5_test.sh``` this is shell script for testing
+
+| -```train``` training data
+
+| -```test``` testing data
 ## Requirements
 To install requirements: ```pip install -r requirements.txt```
 My Python version==3.8.12
 ## Data preprocessing
+Download SVHN dataset and puy in ```./train``` and ```./test```
 Because the ground truth info is the ```.mat``` file, we need to do preprocessing, align the yolo format.
 
 ```python yolo_format.py --train_folder ./train/ --test_folder ./test/ ```
@@ -45,7 +50,8 @@ you can alter info of yolov5_train.sh
 5.```--weights``` version of yolov5
 
 ## Evaluation
-
+[Download my yolov5 model](https://drive.google.com/file/d/1G2jE57AjQs4ChBBVvnlMX4bPitxJw74z/view?usp=sharing)
+put in ```./yolo_v5/runs```
 In ```./yolo_v5/data/svhn.yaml ```, change ```val.txt``` into ```test.txt```
 
 ```sh yolov5_test.sh``` quickly train and produce json file
