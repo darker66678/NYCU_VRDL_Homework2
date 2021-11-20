@@ -1,8 +1,7 @@
-
-path: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolov5/data/train 
-train: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolov5/data/cfg/train.txt  
-#val: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolov5/data/cfg/val.txt  
-val: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolov5/data/cfg/test.txt 
+path: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolo_v5/data/train
+train: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolo_v5/data/cfg/train.txt
+#val: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolov5/data/cfg/val.txt
+val: /home/tylin/vscode/VRDL/NYCU_VRDL_Homework2/yolo_v5/data/cfg/test.txt
 # Classes
-nc: 10  # number of classes
-names: ['0', '1', '2', '3', '4','5', '6', '7','8', '9']  # class names
+nc: 10 # number of classes
+names: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] # class names
