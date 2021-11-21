@@ -63,11 +63,11 @@ if __name__ == '__main__':
     train_imgs = sorted(list(train_imgs[0].astype(int)))
     val_sample = sorted(map(int, val_sample))
 
-    file = open("./yolov5/data/cfg/train.txt", "w")
+    file = open("./yolo_v5/data/cfg/train.txt", "w")
     for i in range(len(train_imgs)):
         file.write("."+args.train_folder+str(train_imgs[i])+'.png\n')
     file.close()
-    file = open("./yolov5/data/cfg/val.txt", "w")
+    file = open("./yolo_v5/data/cfg/val.txt", "w")
     for i in range(len(val_sample)):
         file.write("."+args.train_folder+str(val_sample[i])+'.png\n')
     file.close()
@@ -78,7 +78,7 @@ if __name__ == '__main__':
         if img_file.endswith('.png'):
             test_imgs.append(img_file[0:-4])
     test_imgs = sorted(test_imgs, key=lambda x: int(os.path.splitext(x)[0]))
-    file = open("./yolov5/data/cfg/test.txt", "w")
+    file = open("./yolo_v5/data/cfg/test.txt", "w")
     for i in range(len(test_imgs)):
         file.write("."+args.test_folder+str(test_imgs[i])+'.png\n')
     file.close()
@@ -88,7 +88,7 @@ if __name__ == '__main__':
         args.train_folder+'digitStruct.mat', 'r')
     attrs = {}
     for index in range(len(imgs)):
-        temp_train = "temp_train/"
+        temp_train = "./temp_train/"
         file = open(temp_train+str(index+1)+".txt", "w")
         for key in ['label', 'left', 'top', 'width', 'height']:
             values = get_img_boxes(mat, index)[key]
@@ -132,7 +132,8 @@ if __name__ == '__main__':
                 ymax = elems[3]
                 cls = elems[4]
                 path = args.train_folder
-                img_path = str(path+'%s.png' % (os.path.splitext(txt_name)[0]))
+                img_path = str(path+'%s.png' %
+                               (os.path.splitext(txt_name)[0]))
                 im = Image.open(img_path)
                 w = int(im.size[0])
                 h = int(im.size[1])
