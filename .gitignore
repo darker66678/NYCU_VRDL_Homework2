@@ -133,8 +133,6 @@ result.json
 temp_train/*.txt
 jsonTosubmission.py
 yolo_v5/*.pt
-yolo_v5/data/train
-yolo_v5/data/test
 yolo_v5/runs
 test/*.png
 train/*.png
